@@ -1,1 +1,2 @@
-# Informatyka
+# Python scripts
+Matury + szkoła
