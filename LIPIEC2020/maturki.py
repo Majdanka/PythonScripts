@@ -73,3 +73,24 @@ def zad4_3():
             if z%10!=int(line[3]):
                 wynik.append(line.replace('\n',''))
     print(wynik)
+def zad5():
+    wynik={
+        '1':0,
+        '2':0,
+        '3':0,
+        '4':0,
+        '5':0,
+        '6':0,
+        '7':0,
+        '8':0,
+        '9':0,
+        '10':0,
+        '11':0,
+        '12':0,
+        '13':0,
+        '14':0,
+        '15':0,
+    }
+    for x in range (1,16):
+        print("Program ",x,"-minutowy",wynik[str(x)])
+zad5()
