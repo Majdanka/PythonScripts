@@ -22,24 +22,22 @@ def zad4_2():
                     c8+=1
         print(c2,c8)
 def zad4_3():
-    with open('liczby.txt','r') as f:
-        maxW=0
-        minW=0
-        max=0
-        min=10000000000000000000000
+    with open('./MAJ2015/liczby.txt','r') as f:
+        l=1
+        minw=minl=maxw=maxl=0
         for line in f:
-            index=0
-            c=0
             line=line.replace('\n','')
-            for i in range(0,len(line)-1):
-                if line[i]==1:
-                    c+=1*pow(2,len(line)-i-1)
-            if c>max:
-                max=c
-                maxW=index
-            elif c<min:
-                min=c
-                minW=index
-            index+=1
+            line=int(line,2)
+            if(l==1):
+                minw=line
+                minl=l
+            if(line>maxw):
+                maxw=line
+                maxl=l
+            if(line<minw):
+                minw=line
+                minl=l
+            l+=1
+        print("Min: "+str(minl),"Max: "+str(maxl))
 zad4_3()
             
